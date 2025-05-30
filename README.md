@@ -20,27 +20,6 @@ This project is a full-stack e-commerce application built using the MERN stack (
 - **Authentication:** JSON Web Tokens (JWT)  
 - **Development Tools:** Nodemon, concurrently, dotenv
 
-## Project Structure
-
-root/
-├── backend/
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── index.js
-│ └── .env
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── slices/
-│ │ ├── App.js
-│ │ └── index.js
-├── .gitignore
-├── package.json
-└── README.md
-
-
 ## Stripe Integration
 
 Stripe Checkout is used for payment handling. When a user initiates checkout, the backend creates a Stripe session and redirects the user to Stripe’s secure payment page. After payment completion, Stripe’s webhook notifies the backend to finalize the order.
@@ -71,15 +50,3 @@ From the root directory, run:
 npm run dev
 
 This will start the backend server on [http://localhost:5000](http://localhost:5000) and the frontend on [http://localhost:3000](http://localhost:3000).
-
-## Testing Stripe Payments
-
-Use the following test card details to simulate successful payments in the Stripe test environment:
-
-- **Card Number:** 4242 4242 4242 4242  
-- **Expiry Date:** Any future date  
-- **CVC:** Any 3 digits  
-- **ZIP:** Any 5 digits  
-
-## License
-This project is licensed under the [MIT License](LICENSE).
