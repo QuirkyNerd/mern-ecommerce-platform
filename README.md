@@ -28,14 +28,6 @@ Stripe Checkout is used for payment handling. When a user initiates checkout, th
 
 Create a `.env` file inside the `backend/` directory with the following variables:
 
-\```
-DB_URI=your_mongodb_uri
-JWT_SECRET_KEY=your_jwt_secret
-STRIPE_KEY=your_stripe_secret_key
-CLIENT_URL=http://localhost:3000
-STRIPE_WEB_HOOK=your_stripe_webhook_secret
-\```
-
 ```
 DB_URI=your_mongodb_uri
 JWT_SECRET_KEY=your_jwt_secret
@@ -47,16 +39,22 @@ STRIPE_WEB_HOOK=your_stripe_webhook_secret
 ## Installation and Setup
 
 1. Clone the repository:
+```
 git clone https://github.com/your-username/mern-stripe-commerce.git
 cd mern-stripe-commerce
+```
 
-2. Install dependencies:
+3. Install dependencies:
+```
 npm install
 cd frontend
 npm install
+```
 
-3. Run the project:
+5. Run the project:
 From the root directory, run:
+```
 npm run dev
+```
 
 This will start the backend server on [http://localhost:5000](http://localhost:5000) and the frontend on [http://localhost:3000](http://localhost:3000).
