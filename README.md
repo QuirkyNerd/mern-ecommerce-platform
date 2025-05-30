@@ -18,7 +18,17 @@ This project is a full-stack e-commerce application built using the MERN stack (
 - **Database:** MongoDB (via Mongoose)  
 - **Payments:** Stripe API  
 - **Authentication:** JSON Web Tokens (JWT)  
-- **Development Tools:** Nodemon, concurrently, dotenv  
+- **Development Tools:** Nodemon, concurrently, dotenv
+
+
+## Stripe Integration
+
+Stripe Checkout is used for payment handling. When a user initiates checkout, the backend creates a Stripe session and redirects the user to Stripe’s secure payment page. After payment completion, Stripe’s webhook notifies the backend to finalize the order.
+
+## Environment Variables
+
+Create a `.env` file inside the `backend/` directory with the following variables:
+
 
 ## Project Structure
 
