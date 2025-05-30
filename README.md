@@ -36,6 +36,14 @@ CLIENT_URL=http://localhost:3000
 STRIPE_WEB_HOOK=your_stripe_webhook_secret
 \```
 
+```
+DB_URI=your_mongodb_uri
+JWT_SECRET_KEY=your_jwt_secret
+STRIPE_KEY=your_stripe_secret_key
+CLIENT_URL=http://localhost:3000
+STRIPE_WEB_HOOK=your_stripe_webhook_secret
+```
+
 ## Installation and Setup
 
 1. Clone the repository:
