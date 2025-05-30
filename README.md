@@ -20,37 +20,26 @@ This project is a full-stack e-commerce application built using the MERN stack (
 - **Authentication:** JSON Web Tokens (JWT)  
 - **Development Tools:** Nodemon, concurrently, dotenv
 
-
-## Stripe Integration
-
-Stripe Checkout is used for payment handling. When a user initiates checkout, the backend creates a Stripe session and redirects the user to Stripe’s secure payment page. After payment completion, Stripe’s webhook notifies the backend to finalize the order.
-
-## Environment Variables
-
-Create a `.env` file inside the `backend/` directory with the following variables:
-
-
 ## Project Structure
 
-\```
 root/
 ├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── index.js
-│   └── .env
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ ├── index.js
+│ └── .env
 ├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── slices/
-│   │   ├── App.js
-│   │   └── index.js
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── slices/
+│ │ ├── App.js
+│ │ └── index.js
 ├── .gitignore
 ├── package.json
 └── README.md
-\```
+
 
 ## Stripe Integration
 
@@ -59,39 +48,27 @@ Stripe Checkout is used for payment handling. When a user initiates checkout, th
 ## Environment Variables
 
 Create a `.env` file inside the `backend/` directory with the following variables:
-
-\```
 DB_URI=your_mongodb_uri
 JWT_SECRET_KEY=your_jwt_secret
 STRIPE_KEY=your_stripe_secret_key
 CLIENT_URL=http://localhost:3000
 STRIPE_WEB_HOOK=your_stripe_webhook_secret
-\```
+
 
 ## Installation and Setup
 
 1. Clone the repository:
-
-   \```bash
-   git clone https://github.com/your-username/mern-stripe-commerce.git
-   cd mern-stripe-commerce
-   \```
+git clone https://github.com/your-username/mern-stripe-commerce.git
+cd mern-stripe-commerce
 
 2. Install dependencies:
-
-   \```bash
-   npm install
-   cd frontend
-   npm install
-   \```
+npm install
+cd frontend
+npm install
 
 3. Run the project:
-
-   From the root directory, run:
-
-   \```bash
-   npm run dev
-   \```
+From the root directory, run:
+npm run dev
 
 This will start the backend server on [http://localhost:5000](http://localhost:5000) and the frontend on [http://localhost:3000](http://localhost:3000).
 
@@ -105,5 +82,4 @@ Use the following test card details to simulate successful payments in the Strip
 - **ZIP:** Any 5 digits  
 
 ## License
-
 This project is licensed under the [MIT License](LICENSE).
