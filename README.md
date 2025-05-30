@@ -28,12 +28,13 @@ Stripe Checkout is used for payment handling. When a user initiates checkout, th
 
 Create a `.env` file inside the `backend/` directory with the following variables:
 
+\```
 DB_URI=your_mongodb_uri
 JWT_SECRET_KEY=your_jwt_secret
 STRIPE_KEY=your_stripe_secret_key
 CLIENT_URL=http://localhost:3000
 STRIPE_WEB_HOOK=your_stripe_webhook_secret
-
+\```
 
 ## Installation and Setup
 
